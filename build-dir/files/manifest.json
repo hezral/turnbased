@@ -1,0 +1,30 @@
+{
+  "id" : "com.github.hezral.turnbased",
+  "runtime" : "io.elementary.Sdk",
+  "runtime-version" : "daily",
+  "runtime-commit" : "083484ee4cf5ffe10c484e110540fb5300d40af8dba18b13af6d78ebdf328b15",
+  "sdk" : "io.elementary.Sdk",
+  "sdk-commit" : "083484ee4cf5ffe10c484e110540fb5300d40af8dba18b13af6d78ebdf328b15",
+  "command" : "turnbased",
+  "modules" : [
+    {
+      "name" : "turnbased",
+      "buildsystem" : "meson",
+      "sources" : [
+        {
+          "path" : ".",
+          "type" : "dir"
+        }
+      ]
+    }
+  ],
+  "appstream-compose" : false,
+  "finish-args" : [
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=network",
+    "--device=dri",
+    "--system-talk-name=org.freedesktop.Accounts",
+    "--filesystem=home"
+  ]
+}

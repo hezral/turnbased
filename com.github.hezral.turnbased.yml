@@ -1,0 +1,20 @@
+app-id: com.github.hezral.turnbased
+runtime: io.elementary.Sdk
+runtime-version: 'daily'
+sdk: io.elementary.Sdk
+command: turnbased
+appstream-compose: false
+finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --share=network
+  - --device=dri
+  # needed for perfers-color-scheme
+  - --system-talk-name=org.freedesktop.Accounts
+  - --filesystem=home
+modules:
+  - name: turnbased
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .

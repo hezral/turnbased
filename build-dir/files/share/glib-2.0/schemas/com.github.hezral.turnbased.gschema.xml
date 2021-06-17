@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="turnbased">
+	<schema id="com.github.hezral.turnbased" path="/com/github/hezral/turnbased/">
+	</schema>
+</schemalist>

@@ -1,0 +1,7 @@
+data/com.github.hezral.turnbased.desktop.in
+data/com.github.hezral.turnbased.appdata.xml.in
+data/com.github.hezral.turnbased.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+
